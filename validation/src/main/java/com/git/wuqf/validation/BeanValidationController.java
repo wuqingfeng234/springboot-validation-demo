@@ -9,8 +9,8 @@ import javax.validation.Valid;
 
 @RestController
 public class BeanValidationController {
-    @PostMapping("/person")
-    public ResponseEntity<String> savePersonInfo(@RequestBody @Valid User user) {
-        return ResponseEntity.ok("create person "+ user.getName());
+    @PostMapping("/user")
+    public ResponseEntity<String> saveUser(@RequestBody @Valid User user) {
+        return ResponseEntity.ok("create user "+ user.getName());
     }
 }
